@@ -178,7 +178,7 @@ function CourseListPage() {
                 onChange={handdlePageChange}
               />
             </Stack>
-            <table className="table-auto absolute right-[5%] top-[5%] w-[90%] max-2xl:w-[98%] max-2xl:left-[1%] max-2xl:top-[2%] rounded-lg overflow-hidden">
+            <table className="table-auto mt-6 absolute right-[5%] top-[5%] w-[90%] max-2xl:w-[98%] max-2xl:left-[1%] max-2xl:top-[2%] rounded-lg overflow-hidden">
               <thead className="bg-gray-300">
                 <tr>
                   <th

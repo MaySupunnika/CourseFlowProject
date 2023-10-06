@@ -32,24 +32,6 @@ function Sidebar() {
           </Link>
           <h2 className="text-gray-700">Admin Panel Control</h2>
         </div>
-        {/* <Link to={"/admin/courselist"}>
-          <div
-            className={`py-4 px-6 h-12 w-full flex items-center duration-300 cursor-pointer hover:bg-gray-200 ${isCourseActive ? "bg-gray-200" : ""
-              }`}
-            onClick={handleCourseClick}
-          >
-            <img src={book}></img>
-            <span className="ml-4 font-semibold text-gray-800">Course</span>
-          </div>
-        </Link> */}
-        {/* <Link to={"/admin/courselist"}>
-          <div className="py-4 px-6 h-12 w-full flex items-center duration-300 cursor-pointer hover:bg-gray-200">
-            <img src={book}></img>
-
-            <span className="ml-4 font-semibold text-gray-800">Course</span>
-
-          </div>
-        </Link> */}
         <Link to={"/admin"}>
           <div
             className={`py-4 px-6 h-12 w-full flex items-center duration-300 cursor-pointer hover:bg-gray-200
@@ -59,7 +41,10 @@ function Sidebar() {
             <span className="ml-4 font-semibold text-gray-800">Course</span>
           </div>
         </Link>
-        <div className="py-4 px-6 h-12 flex items-center duration-300 cursor-not-allowed mb-96">
+        <div
+          className="py-4 px-6 h-12 flex items-center duration-300 cursor-pointer"
+          onClick={() => navigate("/admin/assignment")}
+        >
           <img src={assignment}></img>
           <span className="ml-4 font-semibold text-gray-800">Assignment</span>
         </div>
